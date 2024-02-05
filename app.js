@@ -10,7 +10,6 @@ btn.addEventListener('click', () => {
     }
 })
 
-
 const task_input = document.getElementById("task_input");
 
 let todo_tasks = []; 
@@ -38,7 +37,6 @@ function addTask() {
  });
 }
 
-
 // ენთერზე დაწკაპუნების მოვლენა
 task_input.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
@@ -56,7 +54,6 @@ task_input.addEventListener("keypress", (event) => {
 
 //monishvna mara ar nishnavs
 const check = document.querySelector(".check");
-
 const licheck = document.querySelector(".licheck");
 
 check.addEventListener("click", () => {
@@ -78,7 +75,6 @@ const del = document.querySelector('.deleteitem')
 function deleteItem(task) {
   todo_tasks= todo_tasks.splice(item => item !== task);
   updateStorage('todo_tasks');
-  
   
 }
 
