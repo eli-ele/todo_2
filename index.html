@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo</title>
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+             <div class="header" >
+                <div class="todo">TODO</div>
+                   <div class="btn">
+                    <div class="but_indikator">
+                        <div class="but_icon-container">
+                        <img class="icon_moon" src="./assets/icon/Combined Shape.png">
+                        <img class="icon_sun" src="./assets/icon/Combined Shape.jpg">
+                        </div>
+                    </div>
+                   </div>
+                 </div>
+                <div class="todo_1">
+                    <input class="oval" type="checkbox">
+                    <input type="text"  id="task_input">
+                     <button id="add" onclick="myFunction()"> X</button>
+                </div>
+                  <span id="error"></span>
+                  <div class="tasks"></div>
+            </div>
+        </section>
+        <script src="./app.js"></script>
+    </body>
+</html>
